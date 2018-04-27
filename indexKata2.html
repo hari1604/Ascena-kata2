@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Task Tracker v2.0</title>
+    <link rel="styleSheet" href="styleSheetkata2.css">
+</head>
+<body>
+<body>
+  <div class="userFormContainer">
+   <h2>Add a User:</h2>
+   <form id="add-user" onsubmit="return false;">
+     <input type="text" id="name" name="username" placeholder="name" required/>
+     <input  class= "email" type="email" id="email" name="email" placeholder="email" onblur="validateEmail(this.value)" required/>
+     <button id="btn" onclick="submitForm()">
+       Add User
+     </button>
+    </form>
+  </div>
+  <div id="errors"></div>
+  <div class="userListContainer">
+    <h2>Users:</h2>
+    <ul id="users"></ul>
+  </div>
+</body>
+<script src="applicationKata2.js"></script>
+</html>  
